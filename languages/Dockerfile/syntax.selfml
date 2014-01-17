@@ -6,10 +6,10 @@
 (collection keyword
     (zone keyword.control.dockerfile
         (match
-            (regex [^\s*(FROM|MAINTAINER|RUN|CMD|EXPOSE|ENV|ADD)\s])))
+            (regex [^\s*(?i:FROM|MAINTAINER|RUN|CMD|EXPOSE|ENV|ADD)\s])))
     (zone keyword.operator.dockerfile
         (match
-            (regex [^\s*(ENTRYPOINT|VOLUME|USER|WORKDIR)\s]))))
+            (regex [^\s*(?i:ENTRYPOINT|VOLUME|USER|WORKDIR)\s]))))
 
 (collection string
     (zone string.quoted.double.dockerfile
