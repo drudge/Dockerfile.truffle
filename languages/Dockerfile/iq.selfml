@@ -1,0 +1,8 @@
+(detector
+    (filename Dockerfile))
+
+(pair [(]
+    [)]
+    (smart-typing))
+
+(comment.line [# ])
